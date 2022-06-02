@@ -1,0 +1,209 @@
+.workexperience {
+    background: black;
+    width: 100%;
+    height: 100%;
+}
+
+.work-background {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: black;
+    z-index:3;
+}
+
+.workexperience-title {
+    color: white;
+    position: absolute;
+    font-size: 5vw;
+    font-family: 'Poiret One';
+      border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 80vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 80vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.cibc-box {
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;
+    background-color: black;
+}
+
+.sms-box {
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;
+    background-color: black;
+}
+
+.tba-box {
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;
+    background-color: black;
+}
+
+.work-swiper {
+    width: 70vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    text-shadow: 0 0 .2rem #fff,
+    0 0 2rem #7794ff,
+    0 0 3rem #6c8cff;
+}
+
+.neon {
+    animation: pulsate 5s linear infinite alternate;    
+}
+
+
+@keyframes pulsate {
+    100% {
+        text-shadow:
+          0 0 7px #fff,
+          0 0 40px #f09,
+          0 0 80px #f09,
+          0 0 90px #f09,
+          0 0 100px #f09,
+          0 0 150px #f09,
+          0 0 300px #f09;
+      }
+     0% {
+        text-shadow:
+          0 0 2px #fff,
+          0 0 20px #f09,
+          0 0 50px #f09,
+          0 0 60px #f09,
+          0 0 70px #f09,
+          0 0 100px #f09,
+          0 0 200px #f09;
+      }
+    }
+
+.icon {
+    width: 200px;
+}
+
+.icon path {
+    fill: transparent;
+}
+
+.globe path{
+    stroke: #1F51FF;
+    stroke-width: 0.3;
+    stroke-dasharray: 61;
+    stroke-dashoffset: 0;
+}
+
+.globe:hover path {
+    animation: animate-globe 2s linear forwards;
+
+}
+
+.CIBC path{
+    stroke-width: 30;
+    stroke:#FF5733;
+    stroke-dasharray: 5330;
+    stroke-dashoffset: 0;
+}
+
+.CIBC:hover path {
+    animation: animate-CIBC 2s linear forwards;
+}
+
+.hand path {
+    stroke-width: 0.3;
+    stroke:#39FF14;
+    stroke-dasharray: 105;
+    stroke-dashoffset: 0;
+
+}
+
+.hand:hover path {
+    animation: animate-hand 2s linear forwards;
+
+}
+
+.CIBC:hover path{
+}
+
+@keyframes animate-CIBC {
+    0%{
+        stroke-dashoffset: 0;
+    } 
+    50%{
+        stroke-dashoffset: 5330;
+    }
+    100% {
+        stroke-dashoffset: 10660;
+    }
+}
+
+@keyframes animate-globe {
+    0%{
+        stroke-dashoffset: 0;
+    } 
+    50%{
+        stroke-dashoffset: 61;
+    }
+    100% {
+        stroke-dashoffset: 122;
+    }
+}
+
+@keyframes animate-hand {
+    0%{
+        stroke-dashoffset: 0;
+    } 
+    50%{
+        stroke-dashoffset: 105;
+    }
+    100% {
+        stroke-dashoffset: 210;
+        fill: transparent;
+    }
+}

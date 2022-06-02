@@ -1,0 +1,8 @@
+.skills {
+    width: 100vw;
+    height: 100vh;
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    background: #35654d;
+}
