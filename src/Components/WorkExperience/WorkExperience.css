@@ -57,30 +57,30 @@
 .cibc-box {
     box-shadow: 0 0 .2rem #fff,
     0 0 .2rem #fff,
-    0 0 2rem #bc13fe,
-    0 0 0.8rem #bc13fe,
-    0 0 2.8rem #bc13fe,
-    inset 0 0 1.3rem #bc13fe;
+    0 0 2rem #fe1313,
+    0 0 0.8rem #fe1313,
+    0 0 2.8rem #fe1313,
+    inset 0 0 1.3rem #fe1313;
     background-color: black;
 }
 
 .sms-box {
     box-shadow: 0 0 .2rem #fff,
     0 0 .2rem #fff,
-    0 0 2rem #bc13fe,
-    0 0 0.8rem #bc13fe,
-    0 0 2.8rem #bc13fe,
-    inset 0 0 1.3rem #bc13fe;
+    0 0 2rem #13fe46,
+    0 0 0.8rem #13fe46,
+    0 0 2.8rem #13fe46,
+    inset 0 0 1.3rem #13fe46;
     background-color: black;
 }
 
 .tba-box {
     box-shadow: 0 0 .2rem #fff,
     0 0 .2rem #fff,
-    0 0 2rem #bc13fe,
-    0 0 0.8rem #bc13fe,
-    0 0 2.8rem #bc13fe,
-    inset 0 0 1.3rem #bc13fe;
+    0 0 2rem #2313fe,
+    0 0 0.8rem #2313fe,
+    0 0 2.8rem #2313fe,
+    inset 0 0 1.3rem #2313fe;
     background-color: black;
 }
 
@@ -137,10 +137,7 @@
     stroke-width: 0.3;
     stroke-dasharray: 61;
     stroke-dashoffset: 0;
-}
-
-.globe:hover path {
-    animation: animate-globe 2s linear forwards;
+    animation: animate-globe 4s linear infinite forwards;
 
 }
 
@@ -149,27 +146,21 @@
     stroke:#FF5733;
     stroke-dasharray: 5330;
     stroke-dashoffset: 0;
+    animation: animate-CIBC 4s linear infinite forwards;
+
 }
 
-.CIBC:hover path {
-    animation: animate-CIBC 2s linear forwards;
-}
 
 .hand path {
     stroke-width: 0.3;
     stroke:#39FF14;
     stroke-dasharray: 105;
     stroke-dashoffset: 0;
+    animation: animate-hand 4s linear infinite forwards;
 
 }
 
-.hand:hover path {
-    animation: animate-hand 2s linear forwards;
 
-}
-
-.CIBC:hover path{
-}
 
 @keyframes animate-CIBC {
     0%{
