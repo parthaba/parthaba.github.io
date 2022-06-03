@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import MainPage from "../MainPage/MainPage";
 import "./App.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import WorkExperience from "../WorkExperience/WorkExperience";
@@ -13,41 +13,25 @@ export default class App extends Component {
   render() {
     return (
       <Swiper
-        Pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-        initialSlide={1}
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper main"
+        initialSlide={2}
         noSwiping={true}
         noSwipingClass={"noSwipingClass"}
       >
-        <SwiperSlide className="swiperslide-w">
+        <SwiperSlide className="swiperslide">a</SwiperSlide>
+        <SwiperSlide className="swiperslide">
           <Skills />
         </SwiperSlide>
-        <SwiperSlide className="swiperslide-w">
-          <Swiper
-            Pagination={{
-              clickable: true,
-            }}
-            direction={"vertical"}
-            modules={[Pagination]}
-            className="mySwiper2 swiper-v"
-            initialSlide={1}
-            noSwiping={true}
-            noSwipingClass={"noSwipingClass"}
-          >
-            <SwiperSlide className="swiperslide-v">a</SwiperSlide>
-            <SwiperSlide className="swiperslide-v">
-              <MainPage />
-            </SwiperSlide>
-            <SwiperSlide noSwiping={true} className="swiperslide-v">
-              <WorkExperience />
-            </SwiperSlide>
-          </Swiper>
+        <SwiperSlide className="swiperslide">
+          <MainPage />
         </SwiperSlide>
-        <SwiperSlide className="swiperslide-w">
+        <SwiperSlide className="swiperslide">
           <Education />
+        </SwiperSlide>
+        <SwiperSlide noSwiping={true} className="swiperslide">
+          <WorkExperience />
         </SwiperSlide>
       </Swiper>
       // <WorkExperience />

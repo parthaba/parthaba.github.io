@@ -1,5 +1,4 @@
 .main-grid {
-  position: absolute;
   width: 110%;
   height: 110%;
   top: -5%;
@@ -8,7 +7,7 @@
   grid-template-columns: repeat(50, 2%);
   grid-template-rows: repeat(50, 2%);
   background: black;
-  z-index: -1;
+  z-index: -6;
 }
 
 .grid__item {
@@ -136,19 +135,17 @@
     linear-gradient(334deg, rgb(195, 173, 170), rgb(195, 173, 170));
   height: 100%;
   width: 100%;
-  justify-content: left;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
 
 .navigate {
-  font-size: 3rem;
+  font-size: 3vw;
   font-family: "Playfair Display";
   color: black;
-  font-weight: bold;
-  padding-top: 1.5rem;
-  padding-bottom: 0.5vh;
-  padding-left: 2rem;
-  text-align: left;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .navigation {

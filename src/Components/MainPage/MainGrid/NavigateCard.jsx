@@ -6,7 +6,10 @@ export default class NavigateCard extends Component {
     return (
       <div className="navigate-card">
         <div className="navigation__div">
-          <div className="navigate">Drag</div>
+          <div className="navigate">Swipe</div>
+          <div className="navigate">to</div>
+          <div className="navigate">Nav</div>
+{/* 
           <div className="navigation">
             <img className="left" src="/images/icons/arrow.png" alt="Left: " />
             Skills
@@ -26,7 +29,7 @@ export default class NavigateCard extends Component {
           <div className="navigation">
             <img className="up" src="/images/icons/arrow.png" alt="Up: " />
             Projects
-          </div>
+          </div> */}
         </div>
       </div>
     );

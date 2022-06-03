@@ -9,7 +9,7 @@ export default class WorkExperience extends Component {
   render() {
     return (
     <div className="work-background ">  
-        <Swiper navigation={true} modules={[Navigation]} className="noSwipingClass work-swiper">
+        <Swiper navigation={true} direction="vertical" modules={[Navigation]} className="noSwipingClass work-swiper">
         <SwiperSlide>
           <div className="workexperience">
             <div className="workexperience-title neon">

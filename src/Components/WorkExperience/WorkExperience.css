@@ -18,11 +18,10 @@
 .workexperience-title {
     color: white;
     position: absolute;
-    font-size: 5vw;
+    font-size: 4vw;
     font-family: 'Poiret One';
       border: 0.2rem solid #fff;
   border-radius: 2rem;
-  padding: 0.4em;
   box-shadow: 0 0 .2rem #fff,
               0 0 .2rem #fff,
               0 0 2rem #bc13fe,
@@ -33,7 +32,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 80vh;
+    height: 75vh;
     width: 50vw;
     display: flex;
     justify-content: center;
@@ -46,7 +45,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 80vh;
+    height: 75vh;
     width: 50vw;
     display: flex;
     justify-content: center;
@@ -90,11 +89,6 @@
     background-color: black;
 }
 
-.swiper-button-prev, .swiper-button-next {
-    text-shadow: 0 0 .2rem #fff,
-    0 0 2rem #7794ff,
-    0 0 3rem #6c8cff;
-}
 
 .neon {
     animation: pulsate 5s linear infinite alternate;    
@@ -159,6 +153,24 @@
     animation: animate-hand 4s linear infinite forwards;
 
 }
+
+.work-background .swiper-button-prev, .work-background .swiper-button-next {
+    text-shadow: 0 0 .2rem #fff,
+    0 0 2rem #7794ff,
+    0 0 3rem #6c8cff;
+}
+
+
+.work-background .swiper-button-prev{
+    left: 50%;
+    transform: translate(-50%, -45vh) rotate(90deg);
+  }
+  
+.work-background .swiper-button-next {
+    left: 50%;
+    transform: translate(-50%, 45vh) rotate(90deg);
+  
+  }
 
 
 
