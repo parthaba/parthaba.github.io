@@ -12,7 +12,7 @@ export const particlesConfig = {
         enable: true,
         mode: "connect",
         parallax: {
-          enable: true,
+          enable: false,
           force: 400,
           smooth: 10,
         },
@@ -78,7 +78,7 @@ export const particlesConfig = {
       type: "circle",
     },
     size: {
-      value: { min: 1, max: 3 },
+      value: { min: 1, max: 2 },
     },
     wobble: {
       distance: 0.7,

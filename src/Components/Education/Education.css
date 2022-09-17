@@ -14,7 +14,8 @@
   width: 100vw;
   height: 100vh;
   padding-left: 1rem;
-  font-family: "Lato";
+  font-family: "Poiret One";
+  font-weight: bold;
 
 }
 
@@ -51,4 +52,42 @@
   padding-left: 16%;
   margin-top: 2vh;
   margin-bottom: 2vh;
+}
+
+@media only screen and (max-width: 900px) {
+  .education {
+    padding-left: 0;
+    display: table;
+    text-align: center;
+  
+  }
+  
+  .education__list {
+    font-size: 7vw;
+    padding-left: 5%;
+  }
+  
+  .education__list__list {
+    padding-left: 13%;
+    font-size: 3.5vw;
+  }
+
+  .education__list__list li {
+    padding-bottom: 1vh;
+  }
+  
+  .edu-title {
+    font-size: 10vw;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+
+  }
+  .eduh4 {
+    padding-left: 0;
+  }
+  .center-content{
+    display: table-cell;
+    vertical-align: middle;
+  }
 }

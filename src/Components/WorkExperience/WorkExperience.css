@@ -5,7 +5,7 @@
 }
 
 .work-background {
-    width: 100%;
+    width: 100vw;
     position: absolute;
     display: flex;
     align-items: center;
@@ -25,8 +25,7 @@
   box-shadow: 0 0 .2rem #fff,
               0 0 .2rem #fff,
               0 0 2rem #bc13fe,
-              0 0 0.8rem #bc13fe,
-              0 0 2.8rem #bc13fe,
+
               inset 0 0 1.3rem #bc13fe;
     text-align: center;
     top: 50%;
@@ -37,6 +36,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 40px #f09,
+    0 0 300px #f09;
 }
 
 .job-box {
@@ -47,18 +50,62 @@
     transform: translate(-50%,-50%);
     height: 75vh;
     width: 50vw;
+    display: block;
+    text-align: center;
+    background-color: black;
+}
+
+.job-title {
+    font-family: "Poiret One";
+    color: white;
+    font-size: 10vh;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+.job-name {
+    font-family: "Poiret One";
+    color: white;
+    font-size: 7vh;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+
+
+.sms-name {
+    font-size: 5.5vh;
+}
+
+.job-tags {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    flex-wrap: wrap;
+    color: white;
 }
+
+.job-info {
+    width: 90%;
+    text-align: center;
+    color: white;
+    font-family: "Poiret One";
+    margin-top: 3vh;
+    font-size: 3.5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 .cibc-box {
     box-shadow: 0 0 .2rem #fff,
     0 0 .2rem #fff,
     0 0 2rem #fe1313,
-    0 0 0.8rem #fe1313,
-    0 0 2.8rem #fe1313,
+
     inset 0 0 1.3rem #fe1313;
     background-color: black;
 }
@@ -67,8 +114,7 @@
     box-shadow: 0 0 .2rem #fff,
     0 0 .2rem #fff,
     0 0 2rem #13fe46,
-    0 0 0.8rem #13fe46,
-    0 0 2.8rem #13fe46,
+
     inset 0 0 1.3rem #13fe46;
     background-color: black;
 }
@@ -77,8 +123,7 @@
     box-shadow: 0 0 .2rem #fff,
     0 0 .2rem #fff,
     0 0 2rem #2313fe,
-    0 0 0.8rem #2313fe,
-    0 0 2.8rem #2313fe,
+
     inset 0 0 1.3rem #2313fe;
     background-color: black;
 }
@@ -89,37 +134,10 @@
     background-color: black;
 }
 
-
-.neon {
-    animation: pulsate 5s linear infinite alternate;    
-}
-
-
-@keyframes pulsate {
-    100% {
-        text-shadow:
-          0 0 7px #fff,
-          0 0 40px #f09,
-          0 0 80px #f09,
-          0 0 90px #f09,
-          0 0 100px #f09,
-          0 0 150px #f09,
-          0 0 300px #f09;
-      }
-     0% {
-        text-shadow:
-          0 0 2px #fff,
-          0 0 20px #f09,
-          0 0 50px #f09,
-          0 0 60px #f09,
-          0 0 70px #f09,
-          0 0 100px #f09,
-          0 0 200px #f09;
-      }
-    }
-
 .icon {
-    width: 200px;
+    width: 10vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icon path {
@@ -159,6 +177,7 @@
     0 0 2rem #7794ff,
     0 0 3rem #6c8cff;
 }
+
 
 
 .work-background .swiper-button-prev{
@@ -210,3 +229,36 @@
         fill: transparent;
     }
 }
+
+
+@media only screen and (max-width: 900px) {
+    .job-name{
+        font-size: 4.5vh;
+        font-weight: bold;
+    }
+    .sms-name {
+        font-size: 3.5vh;
+    }
+    .job-box, .cibc-box, .tba-box, .sms-box{
+        width: 75%;
+
+    }
+    .job-info {
+        font-size: 2vh;
+        font-weight: bold;
+    }
+    .work-swiper {
+        width: 100vw;
+    }
+    .icon {
+        width: 15vw;
+    }
+    .job-info {
+        margin-top: 2vh;
+    }
+    .workexperience-title {
+        height: 30vh;
+        width: 75vw;
+        font-size: 7vw;
+    }
+  }

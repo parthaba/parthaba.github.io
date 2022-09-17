@@ -15,21 +15,24 @@ export default function MainGrid() {
         tl.current = gsap.timeline()
         .set(q(".grid__item"), {scale: 0.7, opacity: 0}, 0)
         .to(q(".grid__item"), {
-            duration: 2,
+            delay: 0.5,
+            duration: 3,
             ease: 'Expo.easeOut',
             scale: 1,
             stagger: {amount: 0.6, grid: 'auto', from: 'center'}
         }, 0)
         .to(q(".lighten"), {
-            duration: 2,
+            delay: 0.5,
+            duration: 3,
             ease: 'Power1.easeOut',
             opacity: 1,
             stagger: {amount: 0.6, grid: 'auto', from: 'center'}
         }, 0)
         .to(q(".darken"), {
-            duration: 1,
+            delay: 0.5,
+            duration: 3,
             ease: 'Power1.easeOut',
-            opacity: 0.4,
+            opacity: 0.7,
         }, 0);
       });
 

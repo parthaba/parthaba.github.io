@@ -1,0 +1,34 @@
+.ap-icon svg {
+    width: 100px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100px;
+    z-index:10;
+  }
+
+  .ap-icon path{
+      fill: white;
+      stroke: rgb(231, 202, 127);
+      stroke-width: 80;
+      stroke-dasharray: 15600;
+      stroke-dashoffset: -15600;
+  }
+
+  .ap-icon path:hover{
+    animation: animate-logo 3s ease-in-out 1;
+  }
+
+  @keyframes animate-logo {
+    0%{
+        stroke-dashoffset: -15600;
+    } 
+    50%{
+        stroke-dashoffset: 0;
+        fill: white;
+    }
+    100% {
+        stroke-dashoffset: 15600;
+    }
+
+}

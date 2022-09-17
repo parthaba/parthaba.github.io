@@ -1,0 +1,70 @@
+.projects-title {
+    font-size: 8vw;
+    font-family: "Poiret One";
+    text-align: center;
+    color: white;
+}
+
+.scroll-div {
+    font-size: 8vw;
+    font-family: "Poiret One";
+    text-align: center;
+    color: #fff;
+    border: 5px solid #fff;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.projects-item {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    align-items: stretch;
+    z-index: 3;
+}
+
+.projects-image-div {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.projects-image{
+    width: 40vw !important;
+    height: auto !important;
+    max-height: 70vh;
+    border: 4px solid white;
+}
+
+.left-box {
+    width: 50%;
+    height: 500%;
+    background-color: rgb(58, 46, 43);
+}
+.right-box{
+    background-color: rgb(197, 165, 159);
+    height: 500%;
+    width: 50%;
+}
+
+.projects::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .projects {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
+  

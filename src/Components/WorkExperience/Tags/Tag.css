@@ -1,0 +1,13 @@
+.tag {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poiret One";
+    border-radius: 10%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.1vh 0.5vw  0.1vh 0.5vw ;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 2vh;
+}

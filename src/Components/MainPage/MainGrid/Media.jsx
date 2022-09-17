@@ -1,19 +1,11 @@
 import React, { Component } from "react";
-import "./MainPage.css";
-import MainGrid from "./MainGrid/MainGrid";
-import Logo from "../Logo/Logo";
+import "./MainGrid.css";
 
-export default class MainPage extends Component {
+export default class Media extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Logo />
-        <MainGrid />
-        <div className="mobile-main">
-          <div className="mobile-title">Ameen Parthab</div>
-          <div className="mobile-resume"><a href="/images/ResumeAmeenParthab.pdf" target="_blank">Resume</a></div>
-          <div className="mobile-icons">
-          <a target={"_blank"} href="https://github.com/parthaba">
+      <div className="media-box">
+        <a target={"_blank"} href="https://github.com/parthaba">
           <img
             className="media-icon"
             src="/images/icons/github.svg"
@@ -37,9 +29,7 @@ export default class MainPage extends Component {
             alt="linked in"
           />
         </a>
-          </div>
-        </div>
-      </React.Fragment>
+      </div>
     );
   }
 }

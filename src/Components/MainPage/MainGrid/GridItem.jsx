@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, useImperativeHandle, forwardRef} from "rea
 import gsap from "gsap";
 import React from "react";
 import NavigateCard from "./NavigateCard";
+import Media from "./Media"
 
 function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
@@ -90,9 +91,9 @@ export default function GridItemMove() {
         <GridItemStatic randMove={8} ref={addGridRef} styleName="pos-3 lighten" text={<NavigateCard/>} />
         <GridItemStatic randMove={5} ref={addGridRef} styleName="pos-4 lighten resume noSwipingClass" text={<a href="/images/ResumeAmeenParthab.pdf" target="_blank">Resume</a>} />
         <GridItemStatic randMove={-15} ref={addGridRef} styleName="pos-5 darken" bkg="/images/me/beach.jpeg" />
-        {/* <GridItemStatic randMove={10} ref={addGridRef} styleName="pos-6 lighten library" text={<Libraries />} /> */}
-        <GridItemStatic randMove={10} ref={addGridRef} styleName="pos-6 lighten in-prod" text={"Incomplete"} />
+        <GridItemStatic randMove={10} ref={addGridRef} styleName="pos-6 lighten in-prod" text={<Media />} />
         <GridItemStatic randMove={-5} ref={addGridRef} styleName="pos-7 darken" bkg="/images/me/square-one.png" />
+
         </React.Fragment>
     )
 }

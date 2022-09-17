@@ -48,24 +48,24 @@ export default function Deck() {
           />
         </animated.div>
       ))}
-      <div style={{ transform: `translate3d(-700px, 200px, 0px) scale(0.9)`}}>
+      <div style={{ transform: `translate(-600px, 50px) scale(0.9)`}}>
         <div className='left-card' style={{ transform: `perspective(1500px) rotateX(30deg) rotateY(0deg) rotateZ(-30deg)`}}>
-          
+          Skills
         </div>
       </div>
-      <div style={{ transform: `translate3d(-700px, -200px, 0px) scale(0.9)`}}>
+      <div style={{ transform: `translate(-650px, -300px) scale(0.9)`}}>
         <div className='left-card' style={{ transform: `perspective(1500px) rotateX(30deg) rotateY(0deg) rotateZ(-20deg)`}}>
-          
+          Throw the Deck
         </div>
       </div>
-      <div style={{ transform: `translate3d(18vw, -350px, 0px) scale(0.85)`}}>
+      <div style={{ transform: `translate(18vw, -450px) scale(0.85)`}}>
         <div className='left-card' style={{ transform: `perspective(1500px) rotateX(30deg) rotateY(0deg) rotateZ(40deg)`}}>
-          
+          Skills
         </div>
       </div>
-      <div style={{ transform: `translate3d(20vw, -500px, 0px) scale(0.85)`}}>
+      <div style={{ transform: `translate(20vw, -600px) scale(0.85)`}}>
         <div className='left-card' style={{ transform: `perspective(1500px) rotateX(30deg) rotateY(0deg) rotateZ(-50deg)`}}>
-          
+          Skills
         </div>
       </div>
     </>

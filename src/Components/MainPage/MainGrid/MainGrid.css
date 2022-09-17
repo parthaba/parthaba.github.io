@@ -7,12 +7,12 @@
   grid-template-columns: repeat(50, 2%);
   grid-template-rows: repeat(50, 2%);
   background: black;
-  z-index: -6;
+  z-index: 2;
 }
 
 .grid__item {
   position: relative;
-  z-index: -1;
+  z-index: 3;
   background: black;
 }
 
@@ -23,7 +23,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -1;
+  z-index: 3;
 }
 
 .pos-0 {
@@ -32,7 +32,7 @@
   z-index: 10;
   background: linear-gradient(
     125deg,
-    transparent 50.1%,
+    transparent 50%,
     rgba(217, 173, 155, 255) 50.1%
   );
   font-size: 4.5vw;
@@ -56,23 +56,23 @@
 
 .pos-2 {
   grid-area: 5 / 36 / 19 / 42;
-  opacity: 0.4;
+  opacity: 0.7;
   z-index: 1;
 }
 
 .pos-3 {
-  grid-area: 22 / 6 / 44 / 14;
+  grid-area: 26 / 6 / 40 / 14;
   z-index: 2;
 }
 
 .pos-4 {
-  grid-area: 30 / 30 / 39 / 39;
+  grid-area: 31 / 30 / 39 / 39;
   z-index: 2;
 }
 
 .pos-5 {
   grid-area: 5 / 5 / 20 / 15;
-  opacity: 0.4;
+  opacity: 0.7;
   z-index: 1;
 }
 
@@ -83,7 +83,7 @@
 
 .pos-7 {
   grid-area: 40 / 30 / 50 / 36;
-  opacity: 0.4;
+  opacity: 0.7;
   z-index: 1;
 }
 
@@ -141,7 +141,7 @@
 }
 
 .navigate {
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-family: "Playfair Display";
   color: black;
   text-align: center;
@@ -318,10 +318,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.resume span {
-  padding-bottom: 1rem;
 }
 
 .resume a {
@@ -657,4 +653,37 @@
 	font-family: "Plainfair Display";
 	color: #dfcfca;
 	padding-bottom: 0.5rem;
+}
+
+.media-icon {
+  width: 3.5vw !important;
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(94deg) brightness(110%) contrast(101%);
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+
+.media-icon:hover {
+  filter: invert(100%) sepia(97%) saturate(730%) hue-rotate(292deg) brightness(87%) contrast(72%);
+}
+
+.media-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .main-grid{
+    display: none;
+  }
+
+  .mobile-main{
+    display: block;
+  }
+
+  .pos-0, .pos-1, .pos-2, .pos-3, .pos-4, .pos-5, .pos-6, .pos-7{
+    display: none;
+  }
 }

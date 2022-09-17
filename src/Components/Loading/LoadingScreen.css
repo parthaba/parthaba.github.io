@@ -1,0 +1,102 @@
+
+  .loading-icon path{
+    stroke: rgb(231, 202, 127);
+    stroke-width: 50;
+    stroke-dasharray: 15600;
+    stroke-dashoffset: -15600;
+    animation: animate-loader 8s ease-in-out 1;
+    fill: white;
+  }
+  .loading-icon svg {
+    width: 100px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100px;
+    animation: animate-size 8s cubic-bezier(.48,.96,.49,1.00) 1;
+    z-index: 2;
+  }
+  .spinner-container {
+      background-color: black;
+      width: 100vw;
+      height: 100vh;
+  }
+
+  .loading-title {
+    color: transparent;
+    font-family: "Poiret One";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,16vh);
+    font-size: 6.5rem;
+    font-weight: bold;
+    animation: disappear 8s ease-out 1;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 900px) {
+    .loading-title {
+      transform: translate(-50%, 24vh);
+      font-size: 5rem;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .loading-title {
+      transform: translate(-50%, 20vh);
+    }
+  }
+
+  @keyframes animate-loader {
+    0%{
+        stroke-dashoffset: -15600;
+    } 
+    37.5%{
+        stroke-dashoffset: 0;
+        fill: white;
+    }
+    62.5% {
+        stroke-dashoffset: 15600;
+    }
+    100% {
+      stroke-dashoffset: 15600;
+  }
+}
+
+
+@keyframes animate-size {
+  0%{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+  } 
+  70.5%{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+} 
+  100% {
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, 0%);
+    width: 100px;
+}
+}
+
+@keyframes disappear {
+  0% {
+    color: #444;
+  }
+  70.5% {
+    color: #444;
+  }
+  90%{
+    color:transparent;
+  }
+  100%{
+    color:transparent;
+  }
+}
