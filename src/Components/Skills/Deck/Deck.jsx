@@ -55,7 +55,7 @@ export default function Deck() {
       </div>
       <div style={{ transform: `translate(-650px, -300px) scale(0.9)`}}>
         <div className='left-card' style={{ transform: `perspective(1500px) rotateX(30deg) rotateY(0deg) rotateZ(-20deg)`}}>
-          Throw the Deck
+          Throw the Cards
         </div>
       </div>
       <div style={{ transform: `translate(18vw, -450px) scale(0.85)`}}>

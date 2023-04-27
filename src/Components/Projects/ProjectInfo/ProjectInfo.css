@@ -87,4 +87,8 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .project-info {
+        background-color: rgb(58, 46, 43) !important;
+        width: 90vw;
+    }
   }
