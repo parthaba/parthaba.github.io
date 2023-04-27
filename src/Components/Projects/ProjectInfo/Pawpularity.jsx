@@ -34,7 +34,6 @@ export default class Pawpularity extends Component {
             </ul>
         </div>
       </div>
-      <div className="github-div">View more projects on my <a href="https://github.com/parthaba">github</a></div>
       </div>
     );
   }
